@@ -1,5 +1,4 @@
-
-mpile'
+stage 'Compile'
 node('master') {
     def mvnHome = tool 'M3'
     sh "${mvnHome}/bin/mvn clean install -DskipTests"
